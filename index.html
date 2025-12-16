@@ -138,10 +138,10 @@ function calculate(){
         a=Math.ceil(v/0.9);
         b=Math.ceil(v/0.8);
         d=b-a;
-        $('#labelA').text('Harga Market');
-        $('#labelB').text('Harga World Market');
+        $('#labelA').text('Pasang di Market');
+        $('#labelB').text('Pasang World Market');
         $('#rowA').addClass('best').find('span').append('<span class="badge">Paling Optimal</span>');
-        summary=`Untuk mendapatkan hasil bersih <strong>${format(v)}</strong>, harga di <span class="market">Market</span> adalah <strong>${format(a)}</strong>, sedangkan di <span class="world">World Market</span> adalah <strong>${format(b)}</strong>. Opsi paling optimal adalah <span class="market">Market</span> karena lebih murah <strong>${format(d)}</strong>.`;
+        summary=`Untuk mendapatkan hasil bersih <strong>${format(v)}</strong>, harga di <span class="market">Market</span> harus <strong>${format(a)}</strong>, sedangkan di <span class="world">World Market</span> harus <strong>${format(b)}</strong>.`;
     }
     $('#valA').text(format(a));
     $('#valB').text(format(b));
