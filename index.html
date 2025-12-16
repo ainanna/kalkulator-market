@@ -139,7 +139,7 @@ function calculate(){
         b=Math.ceil(v/0.8);
         d=b-a;
         $('#labelA').text('Pasang di Market');
-        $('#labelB').text('Pasang World Market');
+        $('#labelB').text('Pasang di World Market');
         $('#rowA').addClass('best').find('span').append('<span class="badge">Paling Optimal</span>');
         summary=`Untuk mendapatkan hasil bersih <strong>${format(v)}</strong>, harga di <span class="market">Market</span> harus <strong>${format(a)}</strong>, sedangkan di <span class="world">World Market</span> harus <strong>${format(b)}</strong>.`;
     }
